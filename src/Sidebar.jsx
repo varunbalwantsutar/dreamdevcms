@@ -17,7 +17,7 @@ function Sidebar({openSidebarToggle, OpenSidebar,activePage,setActivePage}) {
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive": ""}>
         <div className='sidebar-title'>
             <div className='sidebar-brand'>
-                <BsCart3  className='icon_header'/> SHOP
+               DREAM DEV CMS
             </div>
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
@@ -35,30 +35,8 @@ function Sidebar({openSidebarToggle, OpenSidebar,activePage,setActivePage}) {
           >
                     <BsFillArchiveFill className='icon'/> Products
             </li>
-            <li
-            onClick={() => handleSidebarClick("")}
-            className='sidebar-list-item'
-          >
-                    <BsFillGrid3X3GapFill className='icon'/> Categories
-            </li>
-            <li
-            onClick={() => handleSidebarClick("")}
-            className='sidebar-list-item'
-          >
-                    <BsPeopleFill className='icon'/> Customers
-            </li>
-            <li
-            onClick={() => handleSidebarClick("")}
-            className='sidebar-list-item'
-          >
-                    <BsListCheck className='icon'/> Inventory
-            </li>
-            <li
-            onClick={() => handleSidebarClick("")}
-            className='sidebar-list-item'
-          >
-                    <BsMenuButtonWideFill className='icon'/> Reports
-            </li>
+         
+        
         </ul>
     </aside>
   )

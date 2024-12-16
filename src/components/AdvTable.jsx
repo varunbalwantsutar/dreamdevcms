@@ -85,7 +85,7 @@ const App = ({data,setData}) => {
 
   // Columns definition
   const columns = [
-    { accessorKey: "_id", header: "ID" },
+    { accessorKey: "createdAt", header: "Date & Time" },
     { accessorKey: "name", header: "Name" },
     { accessorKey: "phone_no", header: "Phone No" },
     { accessorKey: "email", header: "Email" },
@@ -119,7 +119,7 @@ const App = ({data,setData}) => {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Enquirys</h1>
-      <Button
+      {/* <Button
         variant="contained"
         color="primary"
         startIcon={<AddIcon />}
@@ -127,7 +127,7 @@ const App = ({data,setData}) => {
         style={{ marginBottom: "20px" }}
       >
         Add New
-      </Button>
+      </Button> */}
 
       <MaterialReactTable columns={columns} data={data} />
 
@@ -143,7 +143,7 @@ const App = ({data,setData}) => {
             onChange={(e) => setNewRow({ ...newRow, name: e.target.value })}
           />
           <TextField
-            label="Phone No"
+            label="Phone no"
             type="text"
             fullWidth
             margin="dense"

@@ -12,8 +12,8 @@ function App() {
   const OpenSidebar = () => {
     setOpenSidebarToggle(!openSidebarToggle)
   }
-      const renderContent = () => {
-        switch (activePage) {
+      const renderContent = (currentActivePage) => {
+        switch (currentActivePage) {
           case "Dashboard":
             return <Dashboard/>;
           case "":
@@ -27,7 +27,7 @@ function App() {
       <Header OpenSidebar={OpenSidebar}/>
       <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar} activePage={activePage} setActivePage={setActivePage}/>
       <div style={{ maxWidth : "80%"}}>
-        {renderContent()}
+        {renderContent(activePage)}
       </div>
     </div>
   )

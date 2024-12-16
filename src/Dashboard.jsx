@@ -50,12 +50,10 @@ function Dashboard() {
   }, [])
 
   const cards = [
-    { id: 1, title: "All Landing Pages",source:"" },
+    { id: 1, title: "All Leads",source:"" },
     { id: 2, title: "Contact Page", source:source.CONTACT_PAGE },
-    { id: 3, title: "Home Page", source:source.HOME_PAGE},
-    { id: 4, title: "Google Page",source: source.GOOGLE_PAGE  },
-    { id: 5, title: "LinkedIn Page",source:source.LINKEDIN_PAGE  },
-    { id: 6, title: "Scheduled",source:source.SCHEDULED_PAGE  },
+    { id: 3, title: "Check Prices", source:source.CHECK_PRICE},
+   
   ];
 
   return (
